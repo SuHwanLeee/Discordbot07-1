@@ -735,9 +735,9 @@ async def LadderFunc(number, ladderlist, channelVal):
 				description= '```' + result_ladderSTR + '```',
 				color=0xff00ff
 				)
-         		await channelVal.send(embed=embed, tts=False)
-   	else:
-      		await channelVal.send('```추첨인원이 총 인원과 같거나 많습니다. 재입력 해주세요```', tts=False)
+			await channelVal.send(embed=embed, tts=False)
+	else:
+		await channelVal.send('```추첨인원이 총 인원과 같거나 많습니다. 재입력 해주세요```', tts=False)
 
 ## 명치 예외처리	
 def handle_exit():
