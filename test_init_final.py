@@ -729,7 +729,7 @@ async def LadderFunc(number, ladderlist, channelVal):
 			await channelVal.send(embed=embed, tts=False)
 		else:
 			result_ladder = random.sample(ladderlist, number)
-         		result_ladderSTR = ','.join(map(str, result_ladder)
+			result_ladderSTR = ','.join(map(str, result_ladder))
 			embed = discord.Embed(
 				title = "----- 당첨! -----",
 				description= '```' + result_ladderSTR + '```',
