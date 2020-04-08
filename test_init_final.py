@@ -893,7 +893,7 @@ def handle_exit():
 # 봇이 구동되었을 때 동작되는 코드입니다.
 @client.event
 async def on_ready():
-        global task1
+	global task1
 	global channel
 	
 	global channel_info
