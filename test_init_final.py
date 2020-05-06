@@ -797,12 +797,12 @@ async def JointheVC(VCchannel, TXchannel):
 #사다리함수		
 async def LadderFunc(number, ladderlist, channelVal):
 	if number < len(ladderlist):
-		if "푸라니" in ladderlist :
+		if "푸라이" in ladderlist :
 			print(ladderlist)
-			ladderlist.remove("푸라니")
+			ladderlist.remove("푸라이")
 			print(ladderlist)
 			result_ladder = random.sample(ladderlist, number-1)
-			result_ladder.append("푸라니")
+			result_ladder.append("푸라이")
 			result_ladderSTR = ','.join(map(str, result_ladder))
 			embed = discord.Embed(
 				title = "----- 당첨! -----",
