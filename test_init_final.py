@@ -621,7 +621,7 @@ async def task():
 async def MakeSound(saveSTR, filename):
 	
 	tts = gTTS(saveSTR, lang = 'ko')
-	tts.save('./' + filename + '.mp3')
+	tts.save('./' + filename + '.wav')
 	
 	'''
 	try:
