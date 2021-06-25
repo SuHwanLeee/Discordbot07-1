@@ -2278,7 +2278,7 @@ class mainCog(commands.Cog):
 
 						tmp_time_delta = (tmp_bossTime[i].date() - (datetime.datetime.now() + datetime.timedelta(hours=int(basicSetting[0]))).date()).days
 						if tmp_time_delta == 0:
-							aa.append(tmp_bossTime[i].strftime('%H:%M:%S'))
+							aa.append(tmp_bossTime[i].strftime('%H:%M'))
 						else:
 							if tmp_time_delta > 0:
 								aa.append(f"(+{tmp_time_delta}d) {tmp_bossTime[i].strftime('%H:%M:%S')}")
@@ -2294,7 +2294,7 @@ class mainCog(commands.Cog):
 
 						tmp_time_delta = (tmp_bossTime[i].date() - (datetime.datetime.now() + datetime.timedelta(hours=int(basicSetting[0]))).date()).days
 						if tmp_time_delta == 0:
-							aa.append(tmp_bossTime[i].strftime('%H:%M:%S'))
+							aa.append(tmp_bossTime[i].strftime('%H:%M'))
 						else:
 							if tmp_time_delta > 0:
 								aa.append(f"(+{tmp_time_delta}d) {tmp_bossTime[i].strftime('%H:%M:%S')}")
@@ -2462,7 +2462,7 @@ class mainCog(commands.Cog):
 						aa.append(tmp_bossTime[i])                       #output_bossData[1] : 시간
 
 						if (datetime.datetime.now() + datetime.timedelta(hours=int(basicSetting[0]))).strftime('%Y-%m-%d') == tmp_bossTime[i].strftime('%Y-%m-%d'):
-							aa.append(tmp_bossTime[i].strftime('%H:%M:%S'))
+							aa.append(tmp_bossTime[i].strftime('%H:%M'))
 						else:
 							aa.append(f"[{tmp_bossTime[i].strftime('%Y-%m-%d')}] {tmp_bossTime[i].strftime('%H:%M:%S')}")
 
@@ -2472,7 +2472,7 @@ class mainCog(commands.Cog):
 						aa.append(bossTime[i])                           #output_bossData[1] : 시간
 
 						if (datetime.datetime.now() + datetime.timedelta(hours=int(basicSetting[0]))).strftime('%Y-%m-%d') == bossTime[i].strftime('%Y-%m-%d'):
-							aa.append(bossTime[i].strftime('%H:%M:%S'))
+							aa.append(bossTime[i].strftime('%H:%M'))
 						else:
 							aa.append(f"[{bossTime[i].strftime('%Y-%m-%d')}] {bossTime[i].strftime('%H:%M:%S')}")
 							
